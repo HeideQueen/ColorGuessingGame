@@ -7,18 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Color Guessing Game</title>
     <link rel="stylesheet" href="app.css">
-    <link href="https://fonts.googleapis.com/css?family=Manjari:100,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <h1>The Great <span id="goalColorDisplay"></span> Guessing Game</h1>
+    <h1>
+        The Great
+        <br>
+        <span id="goalColorDisplay"></span>
+        <br>
+        Guessing Game
+    </h1>
 
     <div id="statusBar">
         <button id="reset">New Colors</button>
         <span id="status"></span>
-        <button id="easy">Easy</button>
-        <button id="hard" class="selected">Hard</button>
+        <button class="mode">Easy</button>
+        <button class="mode selected">Hard</button>
     </div>
 
     <div id="container">

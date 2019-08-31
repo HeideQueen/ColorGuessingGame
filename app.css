@@ -1,8 +1,7 @@
 body {
     background-color: #232323;
     margin: 0;
-    font-family: 'Manjari', sans-serif;
-    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .square {
@@ -11,32 +10,67 @@ body {
     padding-bottom: 30%;
     float: left;
     margin: 1.66%;
+    transition: all 0.6s;
+    border-radius: 15%;
 }
 
 #container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 h1 {
+    padding: 20px 0;
     color: white;
     text-align: center;
     background-color: steelblue;
+    font-weight: 400;
     margin: 0;
-    height: 200px;
-}
-
-#goalColorDisplay {
     text-transform: uppercase;
+    line-height: 1.1;
+    transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
 }
 
 #statusBar {
     background-color: white;
     height: 30px;
     text-align: center;
-    margin: 0;
 }
 
 .selected {
-    background-color: blue;
+    color: white;
+    background-color: steelblue;
+}
+
+#goalColorDisplay {
+    font-size: 200%;
+    font-weight: 700;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 100%;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    outline: none;
+}
+
+button:hover {
+    color: white;
+    background-color: steelblue;
+}
+
+#status {
+    display: inline-block;
+    width: 20%;
 }
