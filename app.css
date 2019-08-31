@@ -1,5 +1,8 @@
 body {
     background-color: #232323;
+    margin: 0;
+    font-family: 'Manjari', sans-serif;
+    font-weight: 100;
 }
 
 .square {
@@ -17,6 +20,10 @@ body {
 
 h1 {
     color: white;
+    text-align: center;
+    background-color: steelblue;
+    margin: 0;
+    height: 200px;
 }
 
 #goalColorDisplay {
@@ -27,6 +34,7 @@ h1 {
     background-color: white;
     height: 30px;
     text-align: center;
+    margin: 0;
 }
 
 .selected {

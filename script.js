@@ -21,7 +21,7 @@ function changeColor(color) {
     }
     if (easy) {
         for (var i = 0; i < easyMode.length; i++) {
-            easyMode[i].style.backgroundColor = "#232323";
+            easyMode[i].style.display = "none";
         }
     };
 };
@@ -51,7 +51,8 @@ function resetGame(n) {
     goalColor = goalGen();
     goalDisplay.textContent = goalColor;
     resetButton.textContent = "New Colors";
-    h1Display.style.backgroundColor = "#232323";
+    h1Display.style.backgroundColor = "steelblue";
+    statusDisplay.textContent = "";
     gameStart();
 }
 
@@ -64,12 +65,14 @@ goalDisplay.textContent = goalColor;
 resetButton.addEventListener("click", function () {
     resetGame(6);
     easy = false;
+    easyButton.classList.remove("selected");
+    hardButton.classList.add("selected");
 })
 
 easyButton.addEventListener("click", function () {
     resetGame(3);
     for (var i = 0; i < easyMode.length; i++) {
-        easyMode[i].style.backgroundColor = "#232323";
+        easyMode[i].style.display = "none";
     }
     easyButton.classList.add("selected");
     hardButton.classList.remove("selected");
@@ -81,7 +84,6 @@ hardButton.addEventListener("click", function () {
     easy = false;
     easyButton.classList.remove("selected");
     hardButton.classList.add("selected");
-
 })
 
 // Main Loop
@@ -101,6 +103,9 @@ function gameStart() {
             }
         });
     };
+    for (var i = 0; i < easyMode.length; i++) {
+        easyMode[i].style.display = "block";
+    }
 };
 
 gameStart();
